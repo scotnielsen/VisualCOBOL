@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="..\..\XSLT\Overview.xslt" type="text/xsl"?>
+<sample><name>COBOL Snake</name>
+<contents>
+  <content linkto="overview">Overview</content>
+  <content linkto="howToRun">How to Run this Demonstration</content>
+  <content linkto="projectsDescription">Project Description</content>
+</contents>
+  <overview>
+    <heading>Overview</heading>
+    <directory>Samples\Games\CobolSnake</directory>
+    <description>COBOL Snake is an arcade game in which the player navigates a long chain of symbols across the screen and scores by collecting numbers. Numbers add to the overall length and the speed of the snake. The player needs to avoid hitting the borders of the screen or touching the snake’s body as this terminates the game.</description>
+    <helpReference></helpReference>
+  </overview>
+  <howToRun>
+    <heading>How to Run the Demonstration</heading>
+    <steps>
+      <step>
+        <description>To run this demonstration in Visual Studio:</description>
+        <steps>
+          <step>Open CobolSnake.sln.</step>
+          <step>Build and run the application.</step>
+          <step>To start the game, press an arrow key.</step>
+          <step>To change the direction of the snake, press the respective arrow key.</step>
+          <step>To pause the game, press ENTER.</step>
+		  <step>The game ends when the snake hits the borders of the playground or its own body.</step>
+        </steps>
+      </step>
+    </steps>
+  </howToRun>
+  <projectsDescription>
+    <heading>Project Description</heading>
+    <intro>The CobolSnake.sln solution includes one project, CobolSnake.cblproj.</intro>
+    <projects>
+      <project name="CobolSnake Project">
+        <description>This project contains:</description>
+        <contents>
+          <content name="CobolSnake.cbl">Includes the source code of the game written in native COBOL.</content>
+        </contents>
+        <outputPath>.\bin</outputPath>
+        <references>
+        </references>
+      </project>
+    </projects>
+  </projectsDescription>
+</sample>

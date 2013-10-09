@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "CobolTicTacToe", "CobolTicTacToe\CobolTicTacToe.cblproj", "{AC892BB6-3014-4982-AEB9-D15A8C8103C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC892BB6-3014-4982-AEB9-D15A8C8103C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC892BB6-3014-4982-AEB9-D15A8C8103C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC892BB6-3014-4982-AEB9-D15A8C8103C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC892BB6-3014-4982-AEB9-D15A8C8103C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

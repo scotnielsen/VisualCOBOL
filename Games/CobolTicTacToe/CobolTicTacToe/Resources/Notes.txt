@@ -1,0 +1,19 @@
+pic x(10)
+
+first 9 positions are game state. 10th position is termination state.
+
+Each grid position is a number between 0 and 2.
+  0 is a blank position. 
+  1 is a player filled position.
+  2 is a computer filled position.
+
+Grid runs left to right and top to bottom.
+
+The termination state can take values 0 to 3.
+0 is game in progress.
+1 is game ended in favour of player.
+2 is game ended in favour of computer.
+3 is game ended in a draw.
+4 is game in an invalid state.
+
+Any values entered other than these also constitute invalid states.

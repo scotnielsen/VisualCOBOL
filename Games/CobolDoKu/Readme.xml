@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="..\..\XSLT\Overview.xslt" type="text/xsl"?>
+<sample><name>COBOLDoKu</name>
+  <contents>
+    <content linkto="overview">Overview</content>
+    <content linkto="howToRun">How to Run this Demonstration</content>
+    <content linkto="projectsDescription">Project Description</content>
+  </contents>
+  <overview>
+    <heading>Overview</heading>
+    <directory>Samples\Games\CobolDoku</directory>
+    <description>
+      COBOLDoKu is a logic puzzle that requires the user to place the numbers 1 to 9 in a grid.
+      Each of the numbers must appear exactly once in each column, row and smaller grid.
+    </description>
+    <helpReference></helpReference>
+  </overview>
+  <howToRun>
+    <heading>How to Run the Demonstration</heading>
+    <steps>
+      <step>
+        <description>To run this demonstration in Visual Studio:</description>
+        <steps>
+          <step>Open CobolDoku.sln.</step>
+          <step>Build and run the application.</step>
+        </steps>
+      </step>
+      <step>
+        <description>To play a game:</description>
+        <steps>
+          <step>Click File > Open Puzzle.</step>
+          <step>Select one of the available pre-created puzzles.</step>
+          <step>Click File > Save Puzzle to save your progress on the puzzle. Saved games can be continued by opening them in the same way.</step>
+        </steps>
+      </step>
+      <step>
+        <description>
+         To display the possible values for all empty cells:
+        </description>
+        <steps>
+          <step>Click View > Show Possible Values.</step>
+        </steps>
+      </step>
+      <step>
+        <description>
+          To automatically fill in the cells that can contain only one number:
+        </description>
+        <steps>
+          <step>Click Smart Play.</step>
+        </steps>
+      </step>
+      <step>
+        <description>To create a puzzle:</description>
+        <steps>
+          <step>Click Edit > Template Mode.</step>
+          <step>Type numbers in the grid cells as desired.</step>
+          <step>Click File > Save Puzzle.</step>
+          <step>Click Edit > Template Mode again to exit template mode.</step>
+        </steps>
+      </step>
+    </steps>
+  </howToRun>
+  <projectsDescription>
+    <heading>Project Description</heading>
+    <intro>The CobolDoku.sln solution includes one project, CobolDoku.cblproj.</intro>
+    <projects>
+      <project name="CobolDoku Project">
+        <description>The project consists of:</description>
+        <contents>
+          <content name="CobolDoKu.cbl, CobolDoKu.Designer.cbl">Two partial classes that form the CobolDoKu.Form1 class, the main window form which contains the grid and the controls.</content>
+          <content name="Main.cbl">The triggering program.</content>
+          <content name="CellChangedEventArgs.cbl">A class derived from System.EventArgs used to send events. Inherits System.EventArgs.</content>
+          <content name="Commands.cbl">An interface declaring the commands for the game.</content>
+          <content name="CompositeCommand.cbl">The implementations of the command interface declared in Commands.cbl.</content>
+          <content name="SudokuCell.cbl">A class that represents and manages a single cell in the grid.</content>
+          <content name="SudokuGrid.cbl">A class that manages the grid as a whole.</content>
+          <content name="SudokuGridView.cbl">A class that manages interactions with and display of the number grid.</content>
+          <content name="puzzles">A directory that stores pre-created puzzles.</content>
+        </contents>
+        <outputPath>.\bin</outputPath>
+        <references>
+          <reference>System</reference>
+          <reference>System.Data</reference>
+          <reference>System.Drawing</reference>
+          <reference>System.Windows.Forms</reference>
+          <reference>System.XML</reference>
+        </references>
+      </project>
+    </projects>
+  </projectsDescription>
+</sample>

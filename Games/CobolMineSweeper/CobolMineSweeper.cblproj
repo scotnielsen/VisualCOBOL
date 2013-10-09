@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{80B616F2-70E6-4B1E-B3CF-0F0E6CFEC2A3}</ProjectGuid>
+    <OutputName>CobolMineSweeper</OutputName>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CobolMineSweeper</RootNamespace>
+    <COBOLProjectType>Native</COBOLProjectType>
+    <StartupObject>MineSweeper</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>.\bin\x86\Debug\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <ManagedCode>False</ManagedCode>
+    <DebugSymbols>True</DebugSymbols>
+    <WarningLevel>3</WarningLevel>
+    <MaxError>100</MaxError>
+    <AdditionalDirectives>ODOSLIDE NOBOUND</AdditionalDirectives>
+    <SourceFormat>Variable</SourceFormat>
+    <NativeLinkRtlStaticOrShared>Dynamic</NativeLinkRtlStaticOrShared>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>.\bin\x86\Release\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <ManagedCode>False</ManagedCode>
+    <DebugSymbols>False</DebugSymbols>
+    <WarningLevel>2</WarningLevel>
+    <MaxError>100</MaxError>
+    <AdditionalDirectives>ODOSLIDE NOBOUND</AdditionalDirectives>
+    <SourceFormat>Variable</SourceFormat>
+    <NativeLinkRtlStaticOrShared>Dynamic</NativeLinkRtlStaticOrShared>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ConfigReader.cbl" />
+    <Compile Include="Minesweeper.cbl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DisplayNeighbourEntry.cpy" />
+    <None Include="FieldMap.cpy" />
+    <None Include="Painter.cpy" />
+    <None Include="PainterLinkageStorage.cpy" />
+    <None Include="PainterLocalStorage.cpy" />
+    <None Include="PainterWorkingStorage.cpy" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Micro Focus\Visual COBOL\v1.0\MicroFocus.COBOL.targets" />
+</Project>

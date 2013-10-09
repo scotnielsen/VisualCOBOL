@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="..\..\XSLT\Overview.xslt" type="text/xsl"?>
+<sample>
+  <name>COBOL Blitz</name>
+  <contents>
+    <content linkto="license">License Information</content>
+    <content linkto="overview">Overview</content>
+    <content linkto="howToRun">How to Run this Demonstration</content>
+    <content linkto="projectsDescription">Project Description</content>
+  </contents>
+  <license>
+    <heading>License Information</heading>
+    <description>This demonstration is provided under the terms of the Microsoft Public License agreement(Ms-Pl). For more information, review the ms-pl.txt file in the demonstration folder or see here: http://www.opensource.org/licenses/ms-pl.html</description>
+  </license>
+  <overview>
+    <heading>Overview</heading>
+    <directory>Samples\Games\CobolBlitz</directory>
+    <description>COBOL Blitz is a shooter game in which the player uses a laser cannon to defend himself against the invasion of aliens troops. The goal is to destroy the troops and prevent them from reaching the bottom of the screen.</description>
+  </overview>
+  <howToRun>
+    <heading>How to Run the Demonstration</heading>
+    <steps>
+      <step>
+        <description>To run this demonstration in Visual Studio:</description>
+        <steps>
+          <step>Open CobolBlitz.sln.</step>
+		  <step>Build and run the application.</step>
+		  <step>To start the game, press any key.</step>
+		  <step>To move the cannon, press the left or right arrow key.</step>
+		  <step>To fire the cannon, press Space.</step>
+		  <step>To pause the game, press ESC.</step>
+		  <step>The number of lives that you have left is at the upper left corner.</step>
+		  <step>Your scores are displayed in the upper right corner.</step>
+        </steps>
+      </step>
+    </steps>
+  </howToRun>
+  <projectsDescription>
+    <heading>Project Description</heading>
+    <intro>The CobolBlitz.sln solution contains one project, CobolBlitz.cblproj.</intro>
+    <projects>
+      <project name="CobolBlitz Project">
+        <description>The project contains:</description>
+        <contents>
+          <content name="CobolBlitz.cbl, CobolBlitz.Designer.cbl">Two partial classes that form the CobolBlitz class, the main window form which contains the playground and the controls.</content>
+          <content name="Main.cbl">The triggering program.</content>
+          <content name="Alien.cbl">Alien enemy entity. Inherits Sprite.</content>
+          <content name="AlienMovementEnum.cbl">An enumeration type for enemy movements.</content>
+          <content name="Aliens.cbl">Contains all alien objects and the data about them.</content>
+          <content name="AlienSizeEnum.cbl">An enumeration type for the size of the enemy.</content>
+          <content name="Base.cbl">The base defender block entity. Inherits Sprite.</content>
+          <content name="BaseShip.cbl">The base ship entity. Inherits Sprite.</content>
+          <content name="Bomb.cbl">The bomb entity. Inherits Sprite.</content>
+          <content name="GameObject.cbl">An abstract class that is a parent of all game entity classes.</content>
+          <content name="GameObjectEnum.cbl">An enumeration type for all entities in the game.</content>
+          <content name="GameState.cbl">The container of all game entities and states.</content>
+          <content name="GameStateEnum.cbl">An enumeration type for the state of the game.</content>
+          <content name="Keyboard.cbl">Processes the information for the pressed arrow key.</content>
+          <content name="Missile.cbl">The missile entity. Inherits Sprite.</content>
+          <content name="PointFMath.cbl">Min and Max function with argument type PointF.</content>
+          <content name="Saucer.cbl">The saucer entity. Inherits Sprite.</content>
+          <content name="Sprite.cbl">The main game entity. Inherits GameObject.</content>
+          <content name="Graphics">A directory that stores the graphics of the entities.</content>
+          <content name="Sounds">A directory that stores the game sounds.</content>
+        </contents>
+        <outputPath>.\bin</outputPath>
+        <references>
+          <reference>System</reference>
+          <reference>System.Windows.Forms</reference>
+          <reference>System.Drawing </reference>
+          <reference>System.Diagnostics</reference>
+          <reference>System.Collections</reference>
+          <reference>System.Random</reference>
+          <reference>System.Resources</reference>
+          <reference>System.Media</reference>
+          <reference>System.Runtime.Serialization</reference>
+        </references>
+      </project>
+    </projects>
+  </projectsDescription>
+</sample>

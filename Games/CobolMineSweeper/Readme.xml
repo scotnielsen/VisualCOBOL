@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="..\..\XSLT\Overview.xslt" type="text/xsl"?>
+<sample><name>COBOL Minesweeper</name>
+  <contents>
+    <content linkto="overview">Overview</content>
+    <content linkto="howToRun">How to Run this Demonstration</content>
+    <content linkto="projectsDescription">Project Description</content>
+  </contents>
+  <overview>
+    <heading>Overview</heading>
+    <directory>Samples\Games\CobolMineSweeper</directory>
+    <description>
+	COBOL Minesweeper is a logic game in which you need to clear a minefield without detonating a mine. The minefield is a grid of undistinguished squares some of which contain mines. You click the squares to uncover them. If a square contains a mine, the game is over. Otherwise it shows the numbers of mines that are in the squares directly adjacent to that square. If the grid or the numbers are not displayed properly, check the Console Window Properties. Ensure the font in the console is set to "Lucida Console" and that the values on the Layout tab match the ones in the Defaults. Check the regional settings on your machine and ensure "Current language for non-Unicode programs" is set to "English".
+    </description>
+    <helpReference></helpReference>
+  </overview>
+  <howToRun>
+    <heading>How to Run the Demonstration</heading>
+    <steps>
+      <step>
+        <description>To run this demonstration in Visual Studio:</description>
+        <steps>
+          <step>Open CobolMineSweeper.sln.</step>
+          <step>Build and run the application.</step>
+        </steps>
+      </step>
+      <step>
+        <description>To play the game:</description>
+        <steps>
+          <step>Choose your difficulty level and press Enter to start the game.</step>
+          <step>To reveal a square click it with the left mouse button.</step>
+          <step>Right-click to flag a square if you are sure it contains a mine.</step>
+        </steps>
+      </step>
+    </steps>
+  </howToRun>
+  <projectsDescription>
+    <heading>Project Description</heading>
+    <intro>The CobolMineSweeper.sln solution includes one project, CobolMineSweeper.cblproj.</intro>
+    <projects>
+      <project name="CobolMineSweeper Project">
+        <description>The project consists of:</description>
+        <contents>
+          <content name="ConfigReader.cbl">A program that creates the minefield.</content>
+          <content name="DisplayNeighbourEntry.cpy">A copybook that contains processing of the neighboring cells.</content>
+          <content name="FieldMap.cpy">A copybook that contains the definitions of the cell and the minefield.</content>
+          <content name="Minesweeper.cbl">The main program.</content>
+          <content name="Painter.cpy">A copybook that contains the drawing of the screen.</content>
+          <content name="PainterLinkageStorage.cpy">A copybook that contains the painter linkage storage.</content>
+          <content name="PainterLocalStorage.cpy">A copybook that contains the painter local storage.</content>
+          <content name="PainterWorkingStorage.cpy">A copybook that contains painter working storage.</content>
+        </contents>
+        <outputPath>.\bin</outputPath>
+      </project>
+    </projects>
+  </projectsDescription>
+</sample>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4246AB3-08B2-497B-983A-46ECD9BD5064}</ProjectGuid>
+    <OutputName>CobolDoKu</OutputName>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CobolDoKu</RootNamespace>
+    <ProductVersion>1.0.0.0</ProductVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <StartupObject>
+    </StartupObject>
+    <PreserveCase>True</PreserveCase>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <SourceFormat>Variable</SourceFormat>
+    <MaxError />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <SourceFormat>Variable</SourceFormat>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CobolDoKu.Designer.cbl">
+      <DependentUpon>CobolDoKu.cbl</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cbl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CellChangedEventArgs.cbl" />
+    <Compile Include="Commands.cbl" />
+    <Compile Include="CompositeCommand.cbl" />
+    <Compile Include="CobolDoKu.cbl">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SudokuGrid.cbl" />
+    <Compile Include="SudokuGridView.cbl">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SudokuCell.cbl" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CobolDoKu.resx">
+      <DependentUpon>CobolDoKu.cbl</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="puzzles\HarderPuzzle.xml" />
+    <None Include="puzzles\HardPuzzle.xml" />
+    <None Include="puzzles\Sudoku1.xml" />
+    <None Include="puzzles\Sudoku2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System.Collections.Generic" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Micro Focus\Visual COBOL\v1.0\MicroFocus.COBOL.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

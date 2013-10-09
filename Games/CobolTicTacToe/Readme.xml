@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="..\..\XSLT\Overview.xslt" type="text/xsl"?>
+<sample><name>COBOL Tic-Tac-Toe</name>
+<contents>
+  <content linkto="overview">Overview</content>
+  <content linkto="howToRun">How to Run this Demonstration</content>
+  <content linkto="projectsDescription">Project Description</content>
+</contents>
+  <overview>
+    <heading>Overview</heading>
+    <directory>Samples\Games\CobolTicTacToe</directory>
+    <description>The player competes with the PC to place three identical marks in a horizontal, vertical, or diagonal row on the 3x3 board.</description>
+    <helpReference></helpReference>
+  </overview>
+  <howToRun>
+    <heading>How to Run the Demonstration</heading>
+    <steps>
+      <step>
+        <description>To run this demonstration in Visual Studio:</description>
+         <steps>
+          <step>Open CobolTicTacToe.sln.</step>
+          <step>Build and run the application.</step>
+          <step>To start the game, click New Game.</step>
+		  <step>The player and the PC place an X or an O in turns trying to form a full row or prevent each other from doing so.</step>
+        </steps>
+      </step>
+    </steps>
+  </howToRun>
+  <projectsDescription>
+    <heading>Project Description</heading>
+    <intro>The CobolTicTacToe.sln consists of one project, CobolTicTacToe.cblproj</intro>
+    <projects>
+      <project name="CobolTicTacToe Project">
+        <description>This project contains:</description>
+        <contents>
+          <content name="Grid.cbl">A class that implements the grid of the board.</content>
+		  <content name="ITicTacToePlayer.cbl">Interface for the player.</content>
+		  <content name="LocalTicTacToePlayer.cbl">A class that implements the ITicTacToePlayer interface.</content>
+          <content name="App.xaml">The startup WPF.</content>
+		  <content name="App.xaml.cbl">The code for App.xaml.</content>
+		  <content name="Screen.xaml">The WPF for the game board.</content>
+          <content name="Screen.xaml.cbl">The code for the Screen.xaml form.</content>
+		  <content name="blank.png">An image representing an empty field.</content>
+		  <content name="draw.png">An image for a drawn game.</content>
+		  <content name="invalid.png">An image for an invalid game state.</content>
+		  <content name="lost.png">An imagefor when you have lost game.</content>
+		  <content name="o.png">An image for the "O" sign.</content>
+		  <content name="x.png">An image for the "X" sign.</content>
+		  <content name="won.png">An alert for when you have won the game.</content>
+		  <content name="Notes.txt">Information on the grid positions and the termination states.</content>
+        </contents>
+        <outputPath>.\bin</outputPath>
+        <references>
+		  <reference>mscorlib</reference>
+          <reference>System</reference>
+		  <reference>System.Core</reference>
+		  <reference>System.Drawing</reference>
+		  <reference>System.XML.Linq</reference>
+		  <reference>System.Data.DataSetExtensions</reference>
+		  <reference>System.Xaml</reference>
+		  <reference>System.Data</reference>
+		  <reference>System.XML</reference>
+          <reference>WindowsBase</reference>
+          <reference>PresentationCore</reference>
+          <reference>PresentationFramework</reference>
+        </references>
+      </project>
+    </projects>
+  </projectsDescription>
+</sample>

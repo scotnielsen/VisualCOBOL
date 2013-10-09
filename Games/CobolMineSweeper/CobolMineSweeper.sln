@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "CobolMineSweeper", "CobolMineSweeper.cblproj", "{80B616F2-70E6-4B1E-B3CF-0F0E6CFEC2A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80B616F2-70E6-4B1E-B3CF-0F0E6CFEC2A3}.Debug|x86.ActiveCfg = Debug|x86
+		{80B616F2-70E6-4B1E-B3CF-0F0E6CFEC2A3}.Debug|x86.Build.0 = Debug|x86
+		{80B616F2-70E6-4B1E-B3CF-0F0E6CFEC2A3}.Release|x86.ActiveCfg = Release|x86
+		{80B616F2-70E6-4B1E-B3CF-0F0E6CFEC2A3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
